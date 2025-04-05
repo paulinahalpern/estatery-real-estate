@@ -5,7 +5,7 @@
 
 .header {
   background-color: #fafafe;
-  display: flex;
+  display: none;
 }
 
 .btn {
@@ -22,6 +22,12 @@
   background-color: #7065f0;
 }
 
+.nav-mobile {
+  background-color: #fafafe;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: 1024px) {
   .header {
     display: flex;
@@ -31,6 +37,7 @@
   .nav-mobile {
     display: none;
   }
+
   .navbar-component__unordered-list {
     display: flex;
     flex-direction: row;

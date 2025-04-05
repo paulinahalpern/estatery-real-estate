@@ -3,7 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { Logo } from "./components/Logo";
 import { Button } from "./components/Button";
 import "./index.css";
-import { NavMobile } from "./components/NavMobile";
+import { NavMobile } from "./components/nav-mobile";
 
 export default function App() {
   return (
@@ -17,8 +17,8 @@ export default function App() {
           <Button label="Name" className="primary" />
           <Button label="Sign Up" className="secondary" />
         </div>
-        <NavMobile />
       </header>
+      <NavMobile />
     </BrowserRouter>
   );
 }

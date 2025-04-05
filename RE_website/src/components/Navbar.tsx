@@ -8,7 +8,7 @@ const navbar: string[] = [
 
 export function Navbar() {
   return (
-    <div>
+    <div className="navbar-component">
       <ul className="navbar-component__unordered-list">
         {navbar.map((item) => (
           <li navbar-component__item>
