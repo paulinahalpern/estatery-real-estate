@@ -1,0 +1,45 @@
+:root {
+  background-color: #f7f7fd;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header {
+  background-color: #fafafe;
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.primary {
+  background-color: #e0def7;
+}
+
+.secondary {
+  background-color: #7065f0;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .navbar-component__unordered-list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    list-style-type: none;
+  }
+  .header-btn {
+    display: flex;
+    gap: 16px;
+    border-radius: 8px;
+  }
+}
