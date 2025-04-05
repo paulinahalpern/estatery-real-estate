@@ -11,10 +11,10 @@ export const NavMobile = () => {
       <Logo />
       <Hamburger toggled={isOpen} toggle={setIsOpen} />
       {isOpen && (
-        <div>
+        <div className="nav-mobile-menu">
           <Navbar />
-          <Button label="Name" className="primary" />
-          <Button label="Sign Up" className="secondary" />
+            <Button label="Login" className="primary" />
+            <Button label="Sign Up" className="secondary" />
         </div>
       )}
     </div>
