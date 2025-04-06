@@ -5,6 +5,8 @@ import { Button } from "./components/button";
 import { NavMobile } from "./components/nav-mobile";
 import "./index.css";
 import { HeadingText } from "./components/heading-text";
+import { StaticImage } from "./components/static-image";
+import { PropertySearchToggle } from "./components/property-search-toggle";
 
 export default function App() {
   return (
@@ -19,8 +21,16 @@ export default function App() {
           <Button label="Sign Up" className="secondary" />
         </div>
       </header>
-      <HeadingText />
       <NavMobile />
+      <div className="main-container">
+        <article>
+          <HeadingText />
+          <PropertySearchToggle />
+        </article>
+        <aside>
+          <StaticImage />
+        </aside>
+      </div>
     </BrowserRouter>
   );
 }
