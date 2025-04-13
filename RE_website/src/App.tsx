@@ -3,26 +3,26 @@ import { Navbar } from "./components/navbar";
 import { Logo } from "./components/logo";
 import { Button } from "./components/button";
 import { NavMobile } from "./components/nav-mobile";
-import "./index.css";
 import { HeadingText } from "./components/heading-text";
 import { StaticImage } from "./components/static-image";
-import { PropertySearchToggle } from "./components/property-search-toggle";
+import { PropertySearchToggle } from "./components/property-search";
+import classes from "./app.module.scss";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <header className="header">
+      <header className={classes.header}>
         <Logo />
         <Routes>
           <Route path="/" element={<Navbar />} />
         </Routes>
-        <div className="header-btn">
-          <Button label="Login" className="primary" />
-          <Button label="Sign Up" className="secondary" />
+        <div className={classes["header-btn"]}>
+          <Button label="Login" className={classes.primary} />
+          <Button label="Sign Up" className={classes.secondary} />
         </div>
       </header>
       <NavMobile />
-      <div className="main-container">
+      <div className={classes["grid-container"]}>
         <article>
           <HeadingText />
           <PropertySearchToggle />

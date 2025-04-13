@@ -1,0 +1,27 @@
+.primary {
+  background-color: #e0def7;
+  font-weight: bold;
+}
+
+.secondary {
+  background-color: #7065f0;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-mobile {
+  background-color: #fafafe;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-mobile-menu {
+  display: grid;
+  row-gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .nav-mobile {
+    display: none;
+  }
+}

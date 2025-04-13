@@ -1,4 +1,4 @@
-import "../index.css";
+import classes from "./button.module.scss";
 
 interface ButtonProps {
   label: string;
@@ -12,10 +12,8 @@ export const Button: React.FC<ButtonProps> = ({
   className,
 }) => {
   return (
-    <button className={`btn ${className}`} onClick={onClick}>
+    <button className={`${classes.btn} ${className}`} onClick={onClick}>
       {label}
     </button>
   );
 };
-
-export default Button;

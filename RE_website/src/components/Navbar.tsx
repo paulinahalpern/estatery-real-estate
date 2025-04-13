@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import classes from "./navbar.module.scss";
+
 const navbar: { name: string; link: string }[] = [
   { name: "Rent", link: "/rent" },
   { name: "Buy", link: "/buy" },
@@ -8,13 +11,13 @@ const navbar: { name: string; link: string }[] = [
 
 export function Navbar() {
   return (
-    <div className="navbar-component">
-      <ul className="navbar-component__unordered-list">
+    <div className={classes["navbar-component"]}>
+      <ul className={classes["nav-links"]}>
         {navbar.map((item) => (
-          <li key="item.name" className="navbar-component__item">
-            <a href="/{item.link}" className="single-nav-link">
+          <li key={item.name} className={classes["list-item"]}>
+            <Link to="{item.link}" className={classes["single-nav-link"]}>
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

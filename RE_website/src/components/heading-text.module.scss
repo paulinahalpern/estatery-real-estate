@@ -1,0 +1,38 @@
+.data-component {
+  display: flex;
+  gap: 80px;
+  padding-bottom: 20px;
+}
+
+.data-item {
+  border-left: 3px solid #e0def7;
+  padding-left: 24px;
+}
+
+.data-item-number {
+  font-weight: bold;
+  color: #7065f0;
+  font-size: 32px;
+}
+
+.data-item-text {
+  color: #6c727f;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  padding-bottom: 32px;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 1024px) {
+  .text-component {
+    width: 544px;
+  }
+}

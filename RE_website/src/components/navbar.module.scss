@@ -1,0 +1,16 @@
+.nav-links {
+  list-style-type: none;
+  gap: 48px;
+}
+
+.single-nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+}
