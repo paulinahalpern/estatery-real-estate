@@ -1,5 +1,9 @@
-import classes from "./static-image.module.scss";
+interface StaticImageProps {
+  img: string;
+  className?: string;
+  alt: string;
+}
 
-export function StaticImage() {
-  return <img src="map.png" alt="Map" className={classes["map-image"]} />;
+export function StaticImage({ img, className, alt }: StaticImageProps) {
+  return <img src={img} className={className} alt={alt} />;
 }

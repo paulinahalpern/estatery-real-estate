@@ -1,15 +1,8 @@
-import classes from "./heading-text.module.scss";
+import classes from "./property-data.module.scss";
 
-export function HeadingText() {
+export function PropertyData() {
   return (
     <>
-      <div className={classes["text-component"]}>
-        <h1>Buy, rent, or sell your property easily</h1>
-        <h2>
-          A great platform to buy, sell, or even rent your properties without
-          any commisions.
-        </h2>
-      </div>
       <div className={classes["data-component"]}>
         <section className={classes["data-item"]}>
           <span className={classes["data-item-number"]}>50k+</span>

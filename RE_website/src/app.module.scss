@@ -15,6 +15,21 @@
   height: 96px;
 }
 
+.map-image {
+  display: none;
+}
+
+aside {
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .map-image {
+    display: block;
+    width: 100%;
+  }
+}
+
 @media (min-width: 1024px) {
   .header {
     display: flex;
@@ -30,16 +45,12 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    column-gap: 20px;
-    justify-items: flex-end;
-  }
-
-  aside {
-    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
   }
 
   article {
-    grid-column: 1;
+    justify-self: stretch;
+    padding: 50px;
   }
 }
