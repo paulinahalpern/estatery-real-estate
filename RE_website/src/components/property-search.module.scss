@@ -29,30 +29,26 @@
   border-bottom: 3px solid #7065f0;
 }
 
-.search-component {
+.search-input {
   background-color: #ffffff;
   font-family: "Plus Jakarta Sans";
-  display: flex;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
-
-.location-section {
-  align-items: center;
-}
-
-.search-component {
   height: 104px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
+}
+
+.input {
+  height: 50%;
+  align-self: center;
+  border: none;
+  font-size: 16px;
+  color: #6c727f;
 }
 
 .search-btn {
   align-self: center;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .secondary {

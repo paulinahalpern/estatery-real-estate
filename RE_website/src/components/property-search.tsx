@@ -47,20 +47,13 @@ export function PropertySearchToggle() {
           </li>
         </ul>
       </div>
-      <div className={classes["search-component"]}>
-        <div className={classes["search-location"]}>
-          <p>Location</p>
-          <p className={classes.bold}>Barcelona, Spain</p>
-        </div>
-        <div className={classes["search-date"]}>
-          <p>When</p>
-          <p className={classes.bold}>
-            Select Move-in Date{" "}
-            <button>
-              <img src="calendar.png" />
-            </button>
-          </p>
-        </div>
+      <div className={classes["search-input"]}>
+        <input
+          name="search location"
+          type="text"
+          defaultValue="Search location"
+          className={classes.input}
+        ></input>
         <div className={classes["search-btn"]}>
           <Button label="Browse Properties" className={classes.secondary} />
         </div>

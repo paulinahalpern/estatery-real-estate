@@ -54,3 +54,55 @@ aside {
     padding: 50px;
   }
 }
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  padding-bottom: 32px;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 32px;
+}
+
+.background-color {
+  background-color: #f7f7fd;
+}
+
+@media (min-width: 1024px) {
+  .text-component {
+    width: 544px;
+  }
+  .benefit-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+.sentence-first {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sentence-second {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.secondary {
+  background-color: #7065f0;
+  color: white;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

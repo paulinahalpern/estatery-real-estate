@@ -1,23 +1,22 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Navbar } from "./components/navbar";
-import { Logo } from "./components/logo";
 import { Button } from "./components/button";
 import { NavMobile } from "./components/nav-mobile";
 import { PropertyData } from "./components/property-data.tsx";
-import { StaticImage } from "./components/static-image";
 import { PropertySearchToggle } from "./components/property-search";
 import classes from "./app.module.scss";
-import { Headline } from "./components/headline.tsx";
-import map from "/map.png";
-import house from "/house.png";
-import { ToggleTab } from "./components/toggle-tab.tsx";
-import { ListingPage } from "./components/listing-page.tsx";
+import { TabComponent } from "./components/tab-component.tsx";
+import { Illustration } from "./components/illustration.tsx";
+import { Benefit } from "./components/benefit.tsx";
+import benefit1 from "../public/benefit1.png";
+import benefit2 from "../public/benefit2.png";
+import benefit3 from "../public/benefit3.png";
 
 export default function App() {
   return (
     <BrowserRouter>
       <header className={classes.header}>
-        <Logo />
+        <img src="logo.png" alt="Company logo" className={classes.logo} />
         <Routes>
           <Route path="/" element={<Navbar />} />
         </Routes>
@@ -27,38 +26,64 @@ export default function App() {
         </div>
       </header>
       <NavMobile />
-      <div className={classes["grid-container"]}>
+      <div
+        className={`${classes["grid-container"]} ${classes["background-color"]}`}
+      >
         <article>
-          <Headline
-            h1={"Buy, rent, or sell your property easily"}
-            h2={
-              "A great platform to buy, sell, or even rent your properties without any commisions."
-            }
-          />
+          <h1> Buy, rent, or sell your property easily</h1>
+          <h2>
+            A great platform to buy, sell, or even rent your properties without
+            any commisions.
+          </h2>
           <PropertyData />
           <PropertySearchToggle />
         </article>
         <aside>
-          <StaticImage
-            img={map}
-            className={classes["map-image"]}
-            alt={"Map image"}
-          />
+          <img src="map.png" alt="Map image" className={classes["map-image"]} />
         </aside>
       </div>
       <div className={classes["grid-container"]}>
         <article>
-          <StaticImage
-            img={house}
+          <img
+            src="house.png"
+            alt="House image"
             className={classes["house-image"]}
-            alt={"House image"}
           />
         </article>
         <aside>
-          <ToggleTab />
+          <TabComponent />
         </aside>
       </div>
-      <ListingPage />
+      <div
+        className={`${classes["grid-container"]} ${classes["background-color"]}`}
+      >
+        <article>
+          <Illustration />
+          <div className={classes["benefit-component"]}>
+            <Benefit
+              img={benefit1}
+              alt={"house-icon"}
+              number={"7.4%"}
+              description={"Property Return Rate"}
+            />
+            <Benefit
+              img={benefit2}
+              alt={"house-icon"}
+              number={"3,856"}
+              description={"Property in Sell & Rent"}
+            />
+            <Benefit
+              img={benefit3}
+              alt={"house-icon"}
+              number={"2,540"}
+              description={"Daily Completed Transactions"}
+            />
+          </div>
+        </article>
+        <aside>
+          <img src="house2.png" alt="House image" />
+        </aside>
+      </div>
     </BrowserRouter>
   );
 }
