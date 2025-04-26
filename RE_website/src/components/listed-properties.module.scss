@@ -1,0 +1,41 @@
+.single-property {
+  border: 1px solid #f0effb;
+}
+
+.price {
+  color: #7065f0;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.single-property-description {
+  padding: 15px;
+}
+
+.price2,
+.address,
+.icons {
+  color: #7f8393;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  padding: 5px;
+}
+
+.icon-image {
+  padding-right: 2px;
+}
+.address {
+  border-bottom: 1px solid #7f8393;
+  padding-bottom: 15px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -8,9 +8,13 @@ import classes from "./app.module.scss";
 import { TabComponent } from "./components/tab-component.tsx";
 import { Illustration } from "./components/illustration.tsx";
 import { Benefit } from "./components/benefit.tsx";
-import benefit1 from "../public/benefit1.png";
-import benefit2 from "../public/benefit2.png";
-import benefit3 from "../public/benefit3.png";
+import benefit1 from "/benefit1.png";
+import benefit2 from "/benefit2.png";
+import benefit3 from "/benefit3.png";
+import { PropertyListing } from "./components/property-listing.tsx";
+import { ListedProperties } from "./components/listed-properties.tsx";
+import { Testimonials } from "./components/testimonials.tsx";
+import { Cta } from "./components/cta.tsx";
 
 export default function App() {
   return (
@@ -83,6 +87,18 @@ export default function App() {
         <aside>
           <img src="house2.png" alt="House image" />
         </aside>
+      </div>
+      <article>
+        <PropertyListing />
+      </article>
+      <div className={classes["grid-properties"]}>
+        <ListedProperties />
+      </div>
+      <div className={classes.testimonials}>
+        <Testimonials />
+      </div>
+      <div className={classes.cta}>
+        <Cta />
       </div>
     </BrowserRouter>
   );
