@@ -1,9 +1,10 @@
 import classes from "./cta.module.scss";
 import { Button } from "./button";
 
-export function Cta() {
+type CtaProps = { classNames?: string };
+export function Cta({ classNames }: CtaProps) {
   return (
-    <>
+    <div className={classNames}>
       <p className={classes.title}>No Spam Promise</p>
       <p className={classes["headline-question"]}>Are you a landlord?</p>
       <p className={classes.paragraph}>
@@ -23,6 +24,6 @@ export function Cta() {
       <p className={classes.paragraph}>
         Join 10,000+ other landlords in our estatery community.
       </p>
-    </>
+    </div>
   );
 }

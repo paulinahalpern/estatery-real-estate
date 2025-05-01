@@ -55,7 +55,7 @@ export function PropertySearchToggle() {
           className={classes.input}
         ></input>
         <div className={classes["search-btn"]}>
-          <Button label="Browse Properties" className={classes.secondary} />
+          <Button label="Browse Properties" className="secondary" />
         </div>
       </div>
     </>

@@ -11,7 +11,7 @@ export function PropertyListing() {
         </p>
       </div>
       <div>
-        <Button label="Browse more properties" className={classes.secondary} />
+        <Button label="Browse more properties" className='secondary' />
       </div>
     </div>
   );

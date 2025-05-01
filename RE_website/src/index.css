@@ -1,10 +1,27 @@
 :root {
-  background-color: #ffffff;
-  font-family: "Plus Jakarta Sans";
+  --primary-background-color: #ffffff;
+  --secondary-bd-color: #f6f7fd;
+  --primary-font-family: "Plus Jakarta Sans";
+  --purple-color: #7065f0;
+  --white-color: #ffffff;
+  --light-purple-color: #e0def7;
+  --bold-font: bold;
 }
 
 html {
   padding: 0;
   margin: 0;
+  background-color: var(--primary-background-color);
+  font-family: var(--primary-font-family);
 }
 
+.secondary {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  font-weight: var(--bold-font);
+}
+
+.primary {
+  background-color: var(--light-purple-color);
+  font-weight: var(--bold-font);
+}

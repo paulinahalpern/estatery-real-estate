@@ -15,6 +15,7 @@ import { PropertyListing } from "./components/property-listing.tsx";
 import { ListedProperties } from "./components/listed-properties.tsx";
 import { Testimonials } from "./components/testimonials.tsx";
 import { Cta } from "./components/cta.tsx";
+import { Footer } from "./components/footer.tsx";
 
 export default function App() {
   return (
@@ -25,8 +26,8 @@ export default function App() {
           <Route path="/" element={<Navbar />} />
         </Routes>
         <div className={classes["header-btn"]}>
-          <Button label="Login" className={classes.primary} />
-          <Button label="Sign Up" className={classes.secondary} />
+          <Button label="Login" className="primary" />
+          <Button label="Sign Up" className="secondary" />
         </div>
       </header>
       <NavMobile />
@@ -97,9 +98,8 @@ export default function App() {
       <div className={classes.testimonials}>
         <Testimonials />
       </div>
-      <div className={classes.cta}>
-        <Cta />
-      </div>
+      <Cta classNames={classes.cta} />
+      <Footer />
     </BrowserRouter>
   );
 }

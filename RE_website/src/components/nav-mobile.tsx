@@ -14,8 +14,8 @@ export const NavMobile = () => {
       {isOpen && (
         <div className={classes["nav-mobile-menu"]}>
           <Navbar />
-          <Button label="Login" className={classes.primary} />
-          <Button label="Sign Up" className={classes.secondary} />
+          <Button label="Login" className="primary" />
+          <Button label="Sign Up" className="secondary" />
         </div>
       )}
     </div>
