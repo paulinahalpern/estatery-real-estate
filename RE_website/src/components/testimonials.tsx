@@ -1,4 +1,4 @@
-import classes from "./testimonials.module.scss";
+import classes from "./testimonials.module.css";
 
 export function Testimonials() {
   return (

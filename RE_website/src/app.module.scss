@@ -1,7 +1,5 @@
 .header {
-  background-color: #fafafe;
   display: none;
-  height: 96px;
 }
 
 .map-image {
@@ -11,108 +9,83 @@
 aside {
   align-self: center;
   justify-self: center;
+  grid-area: right-column;
 }
 
 @media (min-width: 1024px) {
   .map-image {
     display: block;
+    background-size: cover;
   }
-}
-
-@media (min-width: 1024px) {
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 96px;
   }
 
   .grid-properties {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
     justify-self: center;
   }
 
   .header-btn {
     display: flex;
-    gap: 16px;
-    border-radius: 8px;
+    gap: var(--column-gap-secondary);
+    border-radius: var(--border-radius-primary);
   }
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    gap: var(--column-gap-primary);
+    grid-template-areas: "empty left-column right-column";
   }
 
   .testimonials,
   .cta {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: var(--text-align-primary);
   }
 
   .cta {
     background-color: #100a55;
-    padding: 100px;
   }
 
   article {
-    justify-self: stretch;
-    padding: 50px;
+    grid-area: left-column;
   }
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 64px;
-  padding-bottom: 32px;
+  font-weight: var(--font-weight-secondary);
+  font-size: var(--font-size-primary);
 }
 
 h2 {
-  font-size: 20px;
-  padding-bottom: 32px;
+  font-size: var(--font-size-tertiary);
 }
 
 .background-color {
-  background-color: #f7f7fd;
-  padding: 30px;
+  background-color: var(--color-background-secondary);
 }
 
 @media (min-width: 1024px) {
-  .text-component {
-    width: 544px;
-  }
   .benefit-component {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
-    gap: 16px;
+    gap: var(--column-gap-secondary);
     align-items: center;
   }
 }
 
 .sentence-first {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: var(--font-size-secondary);
+  font-weight: var(--font-weight-secondary);
 }
 
 .sentence-second {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.secondary {
-  background-color: #7065f0;
-  color: white;
-  font-weight: bold;
-}
-
-.header {
-  display: flex;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
+  font-size: var(--font-size-quaternary);
+  font-weight: var(--font-weight-primary);
 }

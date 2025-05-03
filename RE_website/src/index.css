@@ -1,27 +1,40 @@
 :root {
-  --primary-background-color: #ffffff;
-  --secondary-bd-color: #f6f7fd;
-  --primary-font-family: "Plus Jakarta Sans";
-  --purple-color: #7065f0;
-  --white-color: #ffffff;
-  --light-purple-color: #e0def7;
-  --bold-font: bold;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f6f7fd;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #7a7f90;
+  --color-text-tertiary: #7065f0;
+  --color-background-button-primary: #7065f0;
+  --color-background-button-secondary: #fE0DEF7;
+  --font-family-primary: "Plus Jakarta Sans";
+  --font-weight-primary: normal;
+  --font-weight-secondary: bold;
+  --font-size-primary: 64px;
+  --font-size-secondary: 40px;
+  --font-size-tertiary: 24px;
+  --font-size-quaternary: 16px;
+  --text-align-primary: center;
+  --column-gap-primary: 50px;
+  --column-gap-secondary: 16px;
+  --padding-primary: 32px;
+  --padding-secondary: 16px;
+  --border-radius-primary: 8px;
 }
 
 html {
   padding: 0;
   margin: 0;
-  background-color: var(--primary-background-color);
-  font-family: var(--primary-font-family);
+  background-color: var(--color-background-primary);
+  font-family: var(--font-family-primary);
 }
 
 .secondary {
-  background-color: var(--purple-color);
-  color: var(--white-color);
-  font-weight: var(--bold-font);
+  background-color: var(--color-background-button-primary);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-secondary);
 }
 
 .primary {
-  background-color: var(--light-purple-color);
-  font-weight: var(--bold-font);
+  background-color: var(--color-background-button-secondary);
+  font-weight: var(--font-weight-secondary);
 }

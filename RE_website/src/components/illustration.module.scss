@@ -1,20 +1,11 @@
 .sentence-first {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: var(----font-size-secondary);
+  font-weight: var(----font-weight-secondary);
 }
 
 .sentence-second {
-  font-size: 16px;
-  font-weight: normal;
-  color: #6c727f;
+  font-size: var(----font-size-quaternary);
+  font-weight: var(----font-weight-primary);
+  color: var(--color-text-secondary);
   padding-bottom: 30px;
-}
-
-.header {
-  display: flex;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
 }

@@ -1,5 +1,5 @@
 import classes from "./listed-properties.module.scss";
-import properties from "./data.tsx";
+import properties from "./data.ts";
 
 export function ListedProperties() {
   return (
