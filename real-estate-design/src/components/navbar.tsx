@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "./navbar.module.scss";
+import classes from "./navbar.module.css";
 
 const navbar: { name: string; link: string }[] = [
   { name: "Rent", link: "/rent" },

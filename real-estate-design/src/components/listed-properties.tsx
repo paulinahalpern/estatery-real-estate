@@ -1,5 +1,5 @@
-import classes from "./listed-properties.module.scss";
-import properties from "./data.ts";
+import classes from "./listed-properties.module.css";
+import properties from "../data/data.ts";
 
 export function ListedProperties() {
   return (
@@ -14,7 +14,7 @@ export function ListedProperties() {
             </p>
             <p className={classes.title}>{property.title}</p>
             <p className={classes.address}>{property.address}</p>
-            <div className={classes.icons}>
+            <footer className={classes.icons}>
               <span className={classes.icon}>
                 <img src="bed.png" className={classes["icon-image"]} />{" "}
                 {property.bedNum} Beds{" "}
@@ -31,7 +31,7 @@ export function ListedProperties() {
                 />
                 {property.squareMeters}m²
               </span>
-            </div>
+            </footer>
           </div>
         </div>
       ))}

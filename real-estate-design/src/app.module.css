@@ -13,6 +13,11 @@ aside {
 }
 
 @media (min-width: 1024px) {
+  .cta {
+    display: flex;
+    gap: var(--column-gap-secondary);
+  }
+
   .map-image {
     display: block;
     background-size: cover;
@@ -28,18 +33,13 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-self: center;
+    gap: var(--column-gap-secondary);
   }
 
   .header-btn {
     display: flex;
     gap: var(--column-gap-secondary);
     border-radius: var(--border-radius-primary);
-  }
-
-  .grid-container {
-    display: grid;
-    gap: var(--column-gap-primary);
-    grid-template-areas: "empty left-column right-column";
   }
 
   .testimonials,
@@ -55,6 +55,7 @@ aside {
 
   article {
     grid-area: left-column;
+    padding: var(padding-primary);
   }
 }
 
@@ -65,10 +66,8 @@ h1 {
 
 h2 {
   font-size: var(--font-size-tertiary);
-}
-
-.background-color {
-  background-color: var(--color-background-secondary);
+  padding-top: var(--padding-secondary);
+  padding-bottom: var(--padding-secondary);
 }
 
 @media (min-width: 1024px) {
@@ -77,6 +76,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--column-gap-secondary);
     align-items: center;
+    padding: var(--padding-secondary);
   }
 }
 

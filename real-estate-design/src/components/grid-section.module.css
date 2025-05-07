@@ -1,0 +1,10 @@
+.grid-container {
+  display: grid;
+  gap: var(--column-gap-primary);
+  grid-template-areas: "empty left-column right-column";
+  grid-template-columns: auto 1fr 1fr;
+}
+
+.background-color {
+  background-color: var(--color-background-secondary);
+}

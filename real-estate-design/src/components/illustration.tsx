@@ -1,4 +1,4 @@
-import classes from "./illustration.module.scss";
+import classes from "./illustration.module.css";
 
 export function Illustration() {
   return (

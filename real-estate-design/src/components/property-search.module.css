@@ -14,26 +14,24 @@
 }
 
 .tab {
-  width: 105px;
-  height: 56px;
+  width: max-content;
+  padding: var(--padding-secondary);
   border: none;
-  background-color: #ffffff;
-  font-family: "Plus Jakarta Sans";
-  font-size: 18px;
-  font-weight: bold;
+  background-color: var(--color-text-primary);
+  font-size: var(--font-size-quaternary);
+  font-weight: var(--font-weight-secondary);
   cursor: pointer;
 }
 
 .tab.active {
-  color: #7065f0;
+  color: var(--color-text-tertiary);
   border-bottom: 3px solid #7065f0;
 }
 
 .search-input {
-  background-color: #ffffff;
-  font-family: "Plus Jakarta Sans";
+  background-color: var(--color-background-primary);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  height: 104px;
+  padding: var(--padding-secondary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -43,8 +41,8 @@
   height: 50%;
   align-self: center;
   border: none;
-  font-size: 16px;
-  color: #6c727f;
+  font-size: var(--font-size-quaternary);
+  color: var(--color-text-secondary);
 }
 
 .search-btn {

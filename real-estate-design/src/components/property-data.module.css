@@ -1,0 +1,21 @@
+.data-component {
+  display: flex;
+  gap: var(--column-gap-primary);
+  padding-bottom: var(--padding-secondary);
+}
+
+.data-item {
+  border-left: 3px solid #e0def7;
+  padding-left: 24px;
+}
+
+.data-item-number {
+  font-weight: bold;
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-secondary);
+}
+
+.data-item-text {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-quaternary);
+}

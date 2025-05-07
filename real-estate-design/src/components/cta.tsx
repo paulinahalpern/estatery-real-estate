@@ -1,4 +1,4 @@
-import classes from "./cta.module.scss";
+import classes from "./cta.module.css";
 import { Button } from "./button";
 
 type CtaProps = { classNames?: string };
@@ -18,7 +18,7 @@ export function Cta({ classNames }: CtaProps) {
           className={classes.input}
         ></input>
         <div className={classes["search-btn"]}>
-          <Button label="Browse Properties" className={classes.secondary} />
+          <Button label="Browse Properties" className="secondary" />
         </div>
       </div>
       <p className={classes.paragraph}>

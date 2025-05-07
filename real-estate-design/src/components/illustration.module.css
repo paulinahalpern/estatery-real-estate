@@ -1,20 +1,15 @@
-.headline-title {
+.sentence-first {
   font-size: var(--font-size-secondary);
   font-weight: var(--font-weight-secondary);
 }
 
-.headline {
+.sentence-second {
   font-size: var(--font-size-quaternary);
+  font-weight: var(--font-weight-primary);
   color: var(--color-text-secondary);
-  text-align: center;
 }
 
-.review {
-  font-size: var(--font-size-tertiary);
-  text-align: center;
-  max-width: 50%;
-}
-
-.awatar {
+.sentence-first,
+.sentence-second {
   padding: var(--padding-secondary);
 }

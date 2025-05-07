@@ -3,39 +3,33 @@
 }
 
 .price {
-  color: #7065f0;
-  font-size: 24px;
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-tertiary);
   font-weight: bolder;
 }
 
 .single-property-description {
-  padding: 15px;
+  padding: var(--padding-secondary);
 }
 
 .price2,
 .address,
 .icons {
-  color: #7f8393;
+  color: var(--color-text-secondary);
 }
 
 .icons {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
 }
 
-.icon {
-  padding: 5px;
-}
-
-.icon-image {
-  padding-right: 2px;
-}
 .address {
   border-bottom: 1px solid #7f8393;
   padding-bottom: 15px;
 }
 
 .title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: var(--font-size-tertiary);
+  font-weight: var(--font-weight-secondary);
 }

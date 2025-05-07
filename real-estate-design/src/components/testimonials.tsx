@@ -1,8 +1,10 @@
 import classes from "./testimonials.module.css";
 
-export function Testimonials() {
+type TestimonialsProps = { classNames?: string };
+
+export function Testimonials({ classNames }: TestimonialsProps) {
   return (
-    <>
+    <div className={classNames}>
       <p className={classes["headline-title"]}>Testimonials</p>
       <p className={classes.headline}>
         See what our property managers, landlords, and <br></br>tenants have to
@@ -20,6 +22,6 @@ export function Testimonials() {
         <img src="awatar_1.png" className={classes.awatar} />
         <img src="awatar_1.png" className={classes.awatar} />
       </div>
-    </>
+    </div>
   );
 }

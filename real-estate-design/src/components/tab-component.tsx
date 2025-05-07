@@ -1,19 +1,19 @@
 import { Button } from "./button";
-import classes from "./tab-component.module.scss";
+import classes from "./tab-component.module.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
 export function TabComponent() {
   return (
     <>
-      <Tabs>
+      <Tabs className={classes["tab-component"]}>
         <div className={classes["tab-header"]}>
           <TabList className={classes["toggle-tab-container"]}>
             <Tab className={classes["tab-btn"]}>For tenants</Tab>
             <Tab className={classes["tab-btn"]}>For landlords</Tab>
           </TabList>
         </div>
-        <TabPanel>
+        <TabPanel className={classes.sentence}>
           <h3>We make it easy for tenants.</h3>
           <h4>
             Whether you're moving out, looking for a new place, or sorting your
@@ -21,7 +21,7 @@ export function TabComponent() {
             You'll save both time and money with our services.
           </h4>
         </TabPanel>
-        <TabPanel>
+        <TabPanel className={classes.sentence}>
           <h3>We make it easy for landlords.</h3>
           <h4>
             Whether you're listing a property, managing tenants, or handling
@@ -30,7 +30,6 @@ export function TabComponent() {
           </h4>
         </TabPanel>
       </Tabs>
-
       <div>
         <Button label="See More >" className={classes["see-more-btn"]} />
       </div>

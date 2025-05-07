@@ -1,20 +1,16 @@
-.headline-title {
+.first-text {
   font-size: var(--font-size-secondary);
   font-weight: var(--font-weight-secondary);
 }
 
-.headline {
+.second-text {
   font-size: var(--font-size-quaternary);
   color: var(--color-text-secondary);
-  text-align: center;
 }
 
-.review {
-  font-size: var(--font-size-tertiary);
-  text-align: center;
-  max-width: 50%;
-}
-
-.awatar {
+.top-nav-property-listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--padding-secondary);
 }

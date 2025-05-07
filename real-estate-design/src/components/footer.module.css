@@ -1,0 +1,43 @@
+.footer {
+  display: grid;
+  align-items: start;
+  padding: var(--padding-primary);
+  grid-template-areas:
+    "logo1 links links links"
+    "logo1 links links links";
+  grid-template-columns: auto 1fr 1fr 1fr;
+}
+
+.title {
+  font-weight: var(--font-weight-secondary);
+}
+
+.pages {
+  font-size: var(--font-size-quaternary);
+  padding: var(--padding-secondary);
+}
+
+.logo1 {
+  grid-area: logo1;
+  justify-self: start;
+}
+
+.links-list {
+  grid-area: links;
+  list-style-type: none;
+  text-align: center;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  color: var(--color-text-tertiary);
+  transition: var(--transition-primary);
+}
+
+.links:visited {
+  color: --color-text-secondary;
+}

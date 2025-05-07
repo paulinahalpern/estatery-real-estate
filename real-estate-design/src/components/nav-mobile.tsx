@@ -2,8 +2,7 @@ import { useState } from "react";
 import Hamburger from "hamburger-react";
 import { Navbar } from "./navbar";
 import { Button } from "./button";
-
-import classes from "./nav-mobile.module.scss";
+import classes from "./nav-mobile.module.css";
 
 export const NavMobile = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

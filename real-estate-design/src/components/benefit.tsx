@@ -1,4 +1,4 @@
-import classes from "./benefit.module.scss";
+import classes from "./benefit.module.css";
 
 interface BenefitProps {
   img: string;

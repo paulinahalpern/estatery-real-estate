@@ -1,4 +1,4 @@
-import classes from "./button.module.scss";
+import classes from "./button.module.css";
 
 interface ButtonProps {
   label: string;

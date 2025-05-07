@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./button";
-import classes from "./property-search.module.scss";
+import classes from "./property-search.module.css";
 
 export function PropertySearchToggle() {
   const [activeTab, setActiveTab] = useState<string>("Rent");

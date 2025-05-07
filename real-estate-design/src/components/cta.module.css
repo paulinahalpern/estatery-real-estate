@@ -1,0 +1,24 @@
+.title {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-tertiary);
+  font-weight: var(--font-weight-secondary);
+}
+
+.headline-question {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-secondary);
+}
+
+.paragraph {
+  color: #d3d5da;
+  font-size: var(--font-size-quaternary);
+}
+
+.newstletter {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  background-color: var(--color-background-primary);
+  width: 50%;
+  padding: var(--padding-secondary);
+}

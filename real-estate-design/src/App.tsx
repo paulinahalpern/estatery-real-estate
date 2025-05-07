@@ -4,7 +4,7 @@ import { Button } from "./components/button";
 import { NavMobile } from "./components/nav-mobile";
 import { PropertyData } from "./components/property-data.tsx";
 import { PropertySearchToggle } from "./components/property-search";
-import classes from "./app.module.scss";
+import classes from "./app.module.css";
 import { TabComponent } from "./components/tab-component.tsx";
 import { Illustration } from "./components/illustration.tsx";
 import { Benefit } from "./components/benefit.tsx";
@@ -16,6 +16,7 @@ import { ListedProperties } from "./components/listed-properties.tsx";
 import { Testimonials } from "./components/testimonials.tsx";
 import { Cta } from "./components/cta.tsx";
 import { Footer } from "./components/footer.tsx";
+import GridSection from "./components/grid-section.tsx";
 
 export default function App() {
   return (
@@ -31,9 +32,7 @@ export default function App() {
         </div>
       </header>
       <NavMobile />
-      <div
-        className={`${classes["grid-container"]} ${classes["background-color"]}`}
-      >
+      <GridSection background>
         <article>
           <h1> Buy, rent, or sell your property easily</h1>
           <h2>
@@ -46,8 +45,8 @@ export default function App() {
         <aside>
           <img src="map.png" alt="Map image" className={classes["map-image"]} />
         </aside>
-      </div>
-      <div className={classes["grid-container"]}>
+      </GridSection>
+      <GridSection>
         <article>
           <img
             src="house.png"
@@ -58,10 +57,8 @@ export default function App() {
         <aside>
           <TabComponent />
         </aside>
-      </div>
-      <div
-        className={`${classes["grid-container"]} ${classes["background-color"]}`}
-      >
+      </GridSection>
+      <GridSection>
         <article>
           <Illustration />
           <div className={classes["benefit-component"]}>
@@ -88,16 +85,12 @@ export default function App() {
         <aside>
           <img src="house2.png" alt="House image" />
         </aside>
-      </div>
-      <article>
-        <PropertyListing />
-      </article>
+      </GridSection>
+      <PropertyListing />
       <div className={classes["grid-properties"]}>
         <ListedProperties />
       </div>
-      <div className={classes.testimonials}>
-        <Testimonials />
-      </div>
+      <Testimonials classNames={classes.testimonials} />
       <Cta classNames={classes.cta} />
       <Footer />
     </BrowserRouter>
