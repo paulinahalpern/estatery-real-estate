@@ -5,15 +5,25 @@ import "react-tabs/style/react-tabs.css";
 
 export function TabComponent() {
   return (
-    <>
+    <div className={classes["tab=component"]}>
       <Tabs className={classes["tab-component"]}>
         <div className={classes["tab-header"]}>
           <TabList className={classes["toggle-tab-container"]}>
-            <Tab className={classes["tab-btn"]}>For tenants</Tab>
-            <Tab className={classes["tab-btn"]}>For landlords</Tab>
+            <Tab
+              className={classes["tab-btn"]}
+              selectedClassName={classes.tabBtnSelected}
+            >
+              For tenants
+            </Tab>
+            <Tab
+              className={classes["tab-btn"]}
+              selectedClassName={classes.tabBtnSelected}
+            >
+              For landlords
+            </Tab>
           </TabList>
         </div>
-        <TabPanel className={classes.sentence}>
+        <TabPanel>
           <h3>We make it easy for tenants.</h3>
           <h4>
             Whether you're moving out, looking for a new place, or sorting your
@@ -21,7 +31,7 @@ export function TabComponent() {
             You'll save both time and money with our services.
           </h4>
         </TabPanel>
-        <TabPanel className={classes.sentence}>
+        <TabPanel>
           <h3>We make it easy for landlords.</h3>
           <h4>
             Whether you're listing a property, managing tenants, or handling
@@ -30,9 +40,11 @@ export function TabComponent() {
           </h4>
         </TabPanel>
       </Tabs>
-      <div>
-        <Button label="See More >" className={classes["see-more-btn"]} />
+      <div className={classes['centered-button']}>
+        <Button className={`${classes["see-more-btn"]} button`}>
+          See More
+        </Button>
       </div>
-    </>
+    </div>
   );
 }

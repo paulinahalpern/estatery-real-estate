@@ -27,8 +27,8 @@ export default function App() {
           <Route path="/" element={<Navbar />} />
         </Routes>
         <div className={classes["header-btn"]}>
-          <Button label="Login" className="primary" />
-          <Button label="Sign Up" className="secondary" />
+          <Button className="primary button">Login</Button>
+          <Button className="secondary button">Sign Up</Button>
         </div>
       </header>
       <NavMobile />

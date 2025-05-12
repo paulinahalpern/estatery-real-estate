@@ -12,6 +12,11 @@ aside {
   grid-area: right-column;
 }
 
+.house-image {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 1024px) {
   .cta {
     display: flex;
@@ -20,8 +25,8 @@ aside {
 
   .map-image {
     display: block;
-    background-size: cover;
   }
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -55,7 +60,6 @@ aside {
 
   article {
     grid-area: left-column;
-    padding: var(padding-primary);
   }
 }
 
@@ -66,8 +70,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-tertiary);
-  padding-top: var(--padding-secondary);
-  padding-bottom: var(--padding-secondary);
+  line-height: 3.5;
 }
 
 @media (min-width: 1024px) {

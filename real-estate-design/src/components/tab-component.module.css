@@ -6,22 +6,21 @@
 
 .tab-header {
   background-color: #dedef7;
-  padding: 8px;
-  width: fit-content;
+  padding: 1px;
   border-radius: var(--border-radius-primary);
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toggle-tab-container {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
-  margin: 0;
-}
-
-.tab-component {
-  display: flex;
-  flex-direction: column;
-  gap: var(--column-gap-secondary);
 }
 
 .tab-btn {
@@ -38,9 +37,16 @@
 
 h3 {
   font-size: var(--font-size-secondary);
+  text-align: center;
 }
 
 h4 {
   font-size: var(--font-size-quaternary);
   font-weight: var(--font-weight-primary);
+  text-align: center;
+}
+
+.tabBtnSelected {
+  color: var(--color-text-tertiary);
+  background-color: var(--color-background-primary);
 }

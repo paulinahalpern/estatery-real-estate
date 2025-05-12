@@ -1,7 +1,6 @@
 .data-component {
   display: flex;
   gap: var(--column-gap-primary);
-  padding-bottom: var(--padding-secondary);
 }
 
 .data-item {
@@ -10,7 +9,7 @@
 }
 
 .data-item-number {
-  font-weight: bold;
+  font-weight: var(--font-weight-secondary);
   color: var(--color-text-tertiary);
   font-size: var(--font-size-secondary);
 }
@@ -18,4 +17,5 @@
 .data-item-text {
   color: var(--color-text-secondary);
   font-size: var(--font-size-quaternary);
+  line-height: 2.5;
 }

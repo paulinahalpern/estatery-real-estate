@@ -9,6 +9,10 @@
   row-gap: 10px;
 }
 
+.logo {
+  height: fit-content;
+}
+
 @media (min-width: 1024px) {
   .nav-mobile {
     display: none;

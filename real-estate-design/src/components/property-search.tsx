@@ -3,48 +3,26 @@ import { Button } from "./button";
 import classes from "./property-search.module.css";
 
 export function PropertySearchToggle() {
-  const [activeTab, setActiveTab] = useState<string>("Rent");
-
+  const [activeTab, setActiveTab] = useState<"Rent" | "Buy" | "Sell">("Rent");
+  const tabs: Array<"Rent" | "Buy" | "Sell"> = ["Rent", "Buy", "Sell"];
   return (
     <>
       <div className={classes["tab-component"]}>
         <ul className={classes["tab-list"]}>
-          <li>
-            <button
-              onClick={() => setActiveTab("Rent")}
-              className={
-                activeTab === "Rent"
-                  ? `${classes["tab"]} ${classes["active"]}`
-                  : `${classes["tab"]}`
-              }
-            >
-              Rent
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setActiveTab("Buy")}
-              className={
-                activeTab === "Buy"
-                  ? `${classes["tab"]} ${classes["active"]}`
-                  : `${classes["tab"]}`
-              }
-            >
-              Buy
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setActiveTab("Sell")}
-              className={
-                activeTab === "Sell"
-                  ? `${classes["tab"]} ${classes["active"]}`
-                  : `${classes["tab"]}`
-              }
-            >
-              Sell
-            </button>
-          </li>
+          {tabs.map((tab) => (
+            <li key={tab}>
+              <button
+                type="button"
+                onClick={() => setActiveTab(tab)}
+                className={`${classes["tab"]} ${
+                  activeTab === tab ? classes["active"] : ""
+                }`}
+                aria-pressed={activeTab === tab}
+              >
+                {tab}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
       <div className={classes["search-input"]}>
@@ -55,7 +33,7 @@ export function PropertySearchToggle() {
           className={classes.input}
         ></input>
         <div className={classes["search-btn"]}>
-          <Button label="Browse Properties" className="secondary" />
+          <Button className="secondary button">Browse Properties</Button>
         </div>
       </div>
     </>

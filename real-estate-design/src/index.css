@@ -39,3 +39,10 @@ html {
   background-color: var(--color-background-button-secondary);
   font-weight: var(--font-weight-secondary);
 }
+
+.button {
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: var(--border-radius-primary);
+  font-size: var(--font-size-quaternary);
+}
