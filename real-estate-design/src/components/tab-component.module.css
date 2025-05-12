@@ -50,3 +50,16 @@ h4 {
   color: var(--color-text-tertiary);
   background-color: var(--color-background-primary);
 }
+
+@media (min-width: 1024px) {
+  .tab-header {
+    width: 50%;
+  }
+  h3,
+  h4 {
+    text-align: left;
+  }
+  .centered-button {
+    justify-content: flex-start;
+  }
+}

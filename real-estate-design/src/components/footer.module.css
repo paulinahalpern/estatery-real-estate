@@ -3,9 +3,19 @@
   align-items: start;
   padding: var(--padding-primary);
   grid-template-areas:
-    "logo1 links links links"
-    "logo1 links links links";
-  grid-template-columns: auto 1fr 1fr 1fr;
+    "logo1 logo1"
+    "links links"
+    "links links";
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-areas:
+      "logo1 links links links"
+      "logo1 links links links";
+    grid-template-columns: auto 1fr 1fr 1fr;
+  }
 }
 
 .title {

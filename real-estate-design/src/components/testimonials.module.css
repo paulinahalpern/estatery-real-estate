@@ -1,6 +1,7 @@
 .headline-title {
   font-size: var(--font-size-secondary);
   font-weight: var(--font-weight-secondary);
+  text-align: center;
 }
 
 .headline {
@@ -12,9 +13,14 @@
 .review {
   font-size: var(--font-size-tertiary);
   text-align: center;
-  max-width: 50%;
 }
 
 .awatar {
   padding: var(--padding-secondary);
+}
+
+@media (min-width: 1024px) {
+  .review {
+    max-width: 50%;
+  }
 }

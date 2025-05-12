@@ -13,8 +13,12 @@ aside {
 }
 
 .house-image {
-  max-width: 100%;
+  max-width: fit-content;
   margin-bottom: 10px;
+}
+
+.benefit-component {
+  text-align: center;
 }
 
 @media (min-width: 1024px) {

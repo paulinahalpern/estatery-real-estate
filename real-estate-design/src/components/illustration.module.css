@@ -12,4 +12,12 @@
 .sentence-first,
 .sentence-second {
   padding: var(--padding-secondary);
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .sentence-first,
+  .sentence-second {
+    text-align: left;
+  }
 }
