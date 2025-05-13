@@ -3,6 +3,10 @@
   gap: var(--column-gap-primary);
 }
 
+.single-nav-link:hover {
+  color: var(--color-text-tertiary);
+}
+
 .single-nav-link {
   text-decoration: none;
   color: black;

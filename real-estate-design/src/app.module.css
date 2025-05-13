@@ -21,6 +21,11 @@ aside {
   text-align: center;
 }
 
+.cta {
+  background-color: #100a55;
+  padding: var(--padding-primary);
+}
+
 @media (min-width: 1024px) {
   .cta {
     display: flex;
@@ -56,10 +61,6 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: var(--text-align-primary);
-  }
-
-  .cta {
-    background-color: #100a55;
   }
 
   article {

@@ -46,3 +46,7 @@ html {
   border-radius: var(--border-radius-primary);
   font-size: var(--font-size-quaternary);
 }
+
+.button:hover {
+  color: var(--color-text-secondary);
+}

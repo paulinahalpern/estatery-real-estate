@@ -19,6 +19,12 @@
   justify-content: space-around;
   justify-items: center;
   background-color: var(--color-background-primary);
-  width: 50%;
+  width: fit-content;
   padding: var(--padding-secondary);
+}
+
+@media (min-width: 1024px) {
+  .newstletter {
+    width: 50%;
+  }
 }
