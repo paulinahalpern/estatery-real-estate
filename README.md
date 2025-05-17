@@ -7,7 +7,7 @@ Design Source: https://www.figma.com/community/file/1159150161670385658/free-est
 
 
 Project purpose:
-The goal of this project is to demonstrate a scalable, modular front-end structure for a real estate platform.
+This project focuses on UI/UX design, created using Figma to develop a clean and user-centered real estate landing page.
 
 Core Technologies & Features:
 - React – Built with functional components.
@@ -21,10 +21,6 @@ Core Technologies & Features:
 - React Developer Tools (Chrome) – Used to inspect component hierarchies, props, and state during development for easier debugging and optimization.
 - Figma – UI/UX design reference for layout and styling consistency.
   
-
-What I would do better next time:
-- Implement a more structured layout plan from the start using CSS Grid to improve consistency, responsiveness, and maintain cleaner, more manageable code.
-
 ## Getting Started
 
 ### Prerequisites
