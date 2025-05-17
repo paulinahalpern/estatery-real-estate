@@ -22,8 +22,8 @@ Core Technologies & Features:
 - Figma – UI/UX design reference for layout and styling consistency.
   
 
-What I will do better next week:
-- More structured planning for layout using CSS Grid and Flexbox combinations
+What I would do better next time:
+- Implement a more structured layout plan from the start using CSS Grid to improve consistency, responsiveness, and maintain cleaner, more manageable code.
 
 ## Getting Started
 
