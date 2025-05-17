@@ -11,3 +11,12 @@ CSS – Styling and layout
 React Router – Client-side routing
 
 Figma – UI/UX design reference
+
+css modules
+css variables
+react
+vercel deployment
+react router
+
+What I will do better next week:
+I will use grid styling from the beginning to reduce the amount of code.
