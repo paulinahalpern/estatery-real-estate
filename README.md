@@ -3,7 +3,7 @@
 
 Live Site: https://real-estate-design-cwgb.vercel.app/
 
-Design Source: https://www.figma.com/community/file/1159150161670385658/free-estatery-real-estate-saas-web-and-mobile-ui-kit.
+Design Source: https://www.figma.com/community/file/1159150161670385658/free-estatery-real-estate-saas-web-and-mobile-ui-kit
 
 
 Project purpose:
