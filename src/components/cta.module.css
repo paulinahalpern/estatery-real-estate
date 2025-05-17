@@ -29,6 +29,11 @@
   justify-items: center;
   background-color: var(--color-background-primary);
   max-width: 100%;
-  width: 40%;
   padding: var(--padding-secondary);
+}
+
+@media (min-width: 1024px) {
+  .newstletter {
+    width: 40%;
+  }
 }
