@@ -93,7 +93,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-tertiary);
-  line-height: 3.5;
+  line-height: 2.5;
 }
 
 @media (min-width: 1024px) {
