@@ -37,13 +37,13 @@ What I would do better next time:
 1.  Clone the repository:
             git clone (https://github.com/paulinahalpern/estatery-real-estate.git)
     
-3.  Navigate to the project directory:
+2.  Navigate to the project directory:
             cd real-estate-estatery
     
-5.  Install dependencies:
+3.  Install dependencies:
             npm install
     
-7. 4. Run the development server
+4. Run the development server
             npm run dev
       
 Open http://localhost:3000 to view the app in your browser.
