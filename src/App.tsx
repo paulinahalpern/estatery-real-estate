@@ -51,7 +51,7 @@ export default function App() {
           <img
             src="house.png"
             alt="House image"
-            className={classes["house-image"]}
+            className={classes["house-image-1"]}
           />
         </article>
         <aside>
@@ -63,19 +63,19 @@ export default function App() {
           <Illustration />
           <div className={classes["benefit-component"]}>
             <Benefit
-              img={benefit1}
+              image={benefit1}
               alt={"house-icon"}
               number={"7.4%"}
               description={"Property Return Rate"}
             />
             <Benefit
-              img={benefit2}
+              image={benefit2}
               alt={"house-icon"}
               number={"3,856"}
               description={"Property in Sell & Rent"}
             />
             <Benefit
-              img={benefit3}
+              image={benefit3}
               alt={"house-icon"}
               number={"2,540"}
               description={"Daily Completed Transactions"}
@@ -83,7 +83,11 @@ export default function App() {
           </div>
         </article>
         <aside>
-          <img src="house2.png" alt="House image" />
+          <img
+            src="house2.png"
+            alt="House image"
+            className={classes["house-image-2"]}
+          />
         </aside>
       </GridSection>
       <PropertyListing />

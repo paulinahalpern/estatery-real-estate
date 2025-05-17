@@ -18,7 +18,7 @@ export function Cta({ classNames }: CtaProps) {
           className={classes.input}
         ></input>
         <div className={classes["search-btn"]}>
-          <Button className="secondary button">Browse Properties</Button>
+          <Button className="secondary button">Submit</Button>
         </div>
       </div>
       <p className={classes.paragraph}>

@@ -12,9 +12,21 @@ aside {
   grid-area: right-column;
 }
 
-.house-image {
+article {
+  text-align: center;
+}
+
+.search-btn {
   max-width: fit-content;
+}
+
+.house-image-1 {
   margin-bottom: 10px;
+  width: 80%;
+}
+
+.house-image-2 {
+  width: 100%;
 }
 
 .benefit-component {
@@ -24,12 +36,18 @@ aside {
 .cta {
   background-color: #100a55;
   padding: var(--padding-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
   .cta {
-    display: flex;
     gap: var(--column-gap-secondary);
+  }
+
+  .house-image {
+    max-width: 100%;
   }
 
   .map-image {

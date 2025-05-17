@@ -32,20 +32,18 @@
   background-color: var(--color-background-primary);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: var(--padding-secondary);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .input {
-  align-self: center;
-  border: none;
   font-size: var(--font-size-quaternary);
   color: var(--color-text-secondary);
+  max-width: 100%;
+  width: 50%;
+  border: none;
 }
 
-.search-btn {
-  align-self: center;
+.input:focus {
+  background-color: var(--color-background-secondary);
 }
-
-

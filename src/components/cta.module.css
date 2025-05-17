@@ -7,24 +7,28 @@
 .headline-question {
   color: var(--color-text-primary);
   font-size: var(--font-size-secondary);
+  text-align: center;
 }
 
 .paragraph {
   color: #d3d5da;
   font-size: var(--font-size-quaternary);
+  text-align: center;
 }
 
+.input {
+  border: none;
+}
+
+.input:focus {
+  background-color: var(--color-background-secondary);
+}
 .newstletter {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   justify-items: center;
   background-color: var(--color-background-primary);
-  width: fit-content;
+  max-width: 100%;
+  width: 40%;
   padding: var(--padding-secondary);
-}
-
-@media (min-width: 1024px) {
-  .newstletter {
-    width: 50%;
-  }
 }

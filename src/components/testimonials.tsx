@@ -16,7 +16,7 @@ export function Testimonials({ classNames }: TestimonialsProps) {
         areas. Thanks for fun home shopping and comparative analyzing,
         Estatery!”
       </p>
-      <p>Mira Culos, Renter </p>
+      <p className={classes.author}>Mira Culos, Renter </p>
       <div className={classes.awatars}>
         <img src="awatar_1.png" className={classes.awatar} />
         <img src="awatar_1.png" className={classes.awatar} />

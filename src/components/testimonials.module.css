@@ -1,22 +1,32 @@
+.headline-title,
+.headline,
+.review,
+.awatar,
+.author {
+  text-align: center;
+}
+
 .headline-title {
   font-size: var(--font-size-secondary);
   font-weight: var(--font-weight-secondary);
-  text-align: center;
 }
 
 .headline {
   font-size: var(--font-size-quaternary);
   color: var(--color-text-secondary);
-  text-align: center;
 }
 
 .review {
   font-size: var(--font-size-tertiary);
-  text-align: center;
 }
 
 .awatar {
   padding: var(--padding-secondary);
+}
+
+.awatars {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 1024px) {
