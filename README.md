@@ -1,4 +1,4 @@
-| Image | Image |
+| Screen | Mobile Version |
 |-------|-------|
 | ![Screenshot 1](https://github.com/user-attachments/assets/4e321606-74a5-4fea-9011-9dc6b98ec215) | ![Screenshot 2](https://github.com/user-attachments/assets/f23517ed-845e-4b92-b393-f37954b5833c) |
 
