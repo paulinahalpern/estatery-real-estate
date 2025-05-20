@@ -2,7 +2,7 @@
 |-------|-------|
 | ![Screenshot 1](https://github.com/user-attachments/assets/4e321606-74a5-4fea-9011-9dc6b98ec215) | ![Screenshot 2](https://github.com/user-attachments/assets/f23517ed-845e-4b92-b393-f37954b5833c) |
 
-Live Site: https://real-estate-design-cwgb.vercel.app/
+Live Site: https://estatery-app.vercel.app/
 
 Design Source: https://www.figma.com/community/file/1159150161670385658/free-estatery-real-estate-saas-web-and-mobile-ui-kit
 
