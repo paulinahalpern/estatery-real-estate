@@ -42,11 +42,10 @@ Core Technologies & Features:
     
 5. Run the development server
             `npm run dev`
-
+   
+Open `http://localhost:3000` to view the app in your browser.
 
 
 [Licence MIT](/LICENSE.md)
       
-Open `http://localhost:3000` to view the app in your browser.
-
 
