@@ -36,15 +36,16 @@ Core Technologies & Features:
     
 2.  Navigate to the project directory:
             `cd real-estate-estatery`
-
-
-    [Licence MIT](estatery-real-estate/LICENSE.md)
     
 4.  Install dependencies:
             `npm install`
     
 5. Run the development server
             `npm run dev`
+
+
+
+[Licence MIT](/LICENSE.md)
       
 Open `http://localhost:3000` to view the app in your browser.
 
