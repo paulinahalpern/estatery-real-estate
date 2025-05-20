@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/4e321606-74a5-4fea-9011-9dc6b98ec215)
+![Image](https://github.com/user-attachments/assets/4e321606-74a5-4fea-9011-9dc6b98ec215)|
 ![Image](https://github.com/user-attachments/assets/f23517ed-845e-4b92-b393-f37954b5833c)
 
 Live Site: https://real-estate-design-cwgb.vercel.app/
@@ -31,18 +31,18 @@ Core Technologies & Features:
 ### Installation
 
 1.  Clone the repository:
-            git clone (https://github.com/paulinahalpern/estatery-real-estate.git)
+            "git clone (https://github.com/paulinahalpern/estatery-real-estate.git)"
     
 2.  Navigate to the project directory:
-            cd real-estate-estatery
+            "cd real-estate-estatery"
     
 3.  Install dependencies:
-            npm install
+            "npm install"
     
 4. Run the development server
-            npm run dev
+            "npm run dev"
       
-Open http://localhost:3000 to view the app in your browser.
+"Open http://localhost:3000 to view the app in your browser."
 
 MIT License
 
