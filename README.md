@@ -1,6 +1,6 @@
-| Screen | Mobile Version |
+| Screen | Login Page | Mobile Version |
 |-------|-------|
-| ![Screenshot 1](https://github.com/user-attachments/assets/4e321606-74a5-4fea-9011-9dc6b98ec215) | ![Screenshot 2](https://github.com/user-attachments/assets/f23517ed-845e-4b92-b393-f37954b5833c) |
+| ![Screenshot 1](https://github.com/user-attachments/assets/81041123-3e50-47fe-945b-736129c781ae) | ![Screenshot 3](https://github.com/user-attachments/assets/5c32b994-5d8a-4fff-adf8-1e16c9014cab) | ![Screenshot 2](https://github.com/user-attachments/assets/f23517ed-845e-4b92-b393-f37954b5833c) |
 
 Live Site: https://estatery-real-estate.vercel.app/
 
